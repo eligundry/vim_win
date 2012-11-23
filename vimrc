@@ -12,11 +12,53 @@
 set nocompatible
 
 "===============================================================================
-" => Script Loading
+" => Vundle Setup
 "===============================================================================
 
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
+filetype off
+rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"===============================================================================
+" => Installed Bundles
+"===============================================================================
+
+Bundle 'gregsexton/MatchTag'
+Bundle 'vim-scripts/c.vim'
+Bundle 'sjl/clam.vim'
+Bundle 'Slashbunny/vim-colorsamplerpack'
+Bundle 'Raimondi/delimitMate'
+Bundle 'xolox/vim-easytags'
+Bundle 'tpope/vim-fugitive'
+Bundle 'sjl/gundo.vim'
+Bundle 'othree/html5.vim'
+Bundle 'nono/jquery.vim'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-eunuch'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'honza/snipmate-snippets'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'majutsushi/tagbar'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'tpope/vim-haml'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'elzr/vim-json'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'sjl/vim-sparkup'
+Bundle 'Shougo/vimproc'
 
 "===============================================================================
 " => Global Settings
